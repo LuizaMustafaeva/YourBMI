@@ -139,13 +139,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш результат:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEJ-WQ-daK">
-                                <rect key="frame" x="68" y="179" width="279" height="64"/>
+                                <rect key="frame" x="68" y="143" width="279" height="64"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vg3-qZ-rIT">
-                                <rect key="frame" x="129" y="263" width="156" height="94.5"/>
+                                <rect key="frame" x="129" y="227" width="156" height="94.5"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="59"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -161,15 +161,15 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кушайте больше вкусняшек" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOy-Bv-T98">
-                                <rect key="frame" x="58" y="384.5" width="299" height="40"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                <rect key="frame" x="58" y="367" width="299" height="90"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.30588235294117649" green="0.62745098039215685" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="IEJ-WQ-daK" firstAttribute="top" secondItem="2xT-xA-jyq" secondAttribute="top" constant="179" id="0VR-Fr-QVu"/>
+                            <constraint firstItem="IEJ-WQ-daK" firstAttribute="top" secondItem="2xT-xA-jyq" secondAttribute="top" constant="143" id="1TE-Bg-3rq"/>
                             <constraint firstItem="Vg3-qZ-rIT" firstAttribute="leading" secondItem="2xT-xA-jyq" secondAttribute="leading" constant="129" id="DJW-8s-3jl"/>
                             <constraint firstItem="2xT-xA-jyq" firstAttribute="bottom" secondItem="Ab8-IN-9LG" secondAttribute="bottom" constant="38" id="JmS-ZD-uTq"/>
                             <constraint firstItem="2xT-xA-jyq" firstAttribute="trailing" secondItem="Ab8-IN-9LG" secondAttribute="trailing" constant="119" id="RTW-EG-z6f"/>
@@ -178,7 +178,7 @@
                             <constraint firstItem="2xT-xA-jyq" firstAttribute="trailing" secondItem="Vg3-qZ-rIT" secondAttribute="trailing" constant="129" id="jV3-Bq-rPn"/>
                             <constraint firstItem="Vg3-qZ-rIT" firstAttribute="top" secondItem="IEJ-WQ-daK" secondAttribute="bottom" constant="20" id="nlL-TB-e5H"/>
                             <constraint firstItem="Ab8-IN-9LG" firstAttribute="leading" secondItem="2xT-xA-jyq" secondAttribute="leading" constant="119" id="t5I-j5-2hz"/>
-                            <constraint firstItem="qOy-Bv-T98" firstAttribute="top" secondItem="Vg3-qZ-rIT" secondAttribute="bottom" constant="27" id="uh5-Rc-GtI"/>
+                            <constraint firstItem="qOy-Bv-T98" firstAttribute="top" secondItem="Vg3-qZ-rIT" secondAttribute="bottom" constant="45.5" id="tCo-h2-Ash"/>
                             <constraint firstItem="IEJ-WQ-daK" firstAttribute="leading" secondItem="2xT-xA-jyq" secondAttribute="leading" constant="68" id="y72-t0-rXN"/>
                             <constraint firstItem="2xT-xA-jyq" firstAttribute="trailing" secondItem="IEJ-WQ-daK" secondAttribute="trailing" constant="67" id="zhB-rq-iCn"/>
                         </constraints>
