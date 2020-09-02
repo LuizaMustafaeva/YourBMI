@@ -36,7 +36,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5 м" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQb-mm-ZoM">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.25 м" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQb-mm-ZoM">
                                                 <rect key="frame" x="239.5" y="0.0" width="154.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,7 +66,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 кг" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQi-1G-beW">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50кг" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQi-1G-beW">
                                                 <rect key="frame" x="224.5" y="0.0" width="169.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,6 +97,7 @@
                                         </state>
                                         <connections>
                                             <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UNe-v4-p8c"/>
+                                            <segue destination="FKp-a1-Xmg" kind="show" identifier="goToResult" id="Bfk-4Y-5yJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -108,7 +109,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.30588235294117649" green="0.53725490196078429" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.41568627450980389" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Hxn-Qv-yb3" secondAttribute="trailing" id="2Y4-As-Cea"/>
                             <constraint firstItem="Hxn-Qv-yb3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="CZT-6i-Y9J"/>
@@ -128,6 +129,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="v88-MS-sUa">
+            <objects>
+                <viewController id="FKp-a1-Xmg" customClass="ResultViewController" customModule="YourBMI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZVn-pO-jUY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш результат:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEJ-WQ-daK">
+                                <rect key="frame" x="68" y="179" width="279" height="64"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vg3-qZ-rIT">
+                                <rect key="frame" x="129" y="263" width="156" height="94.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="59"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ab8-IN-9LG">
+                                <rect key="frame" x="119" y="702" width="176" height="68"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="35"/>
+                                <state key="normal" title="Пересчитать">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="FKp-a1-Xmg" eventType="touchUpInside" id="QdV-RW-MU1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кушайте больше вкусняшек" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOy-Bv-T98">
+                                <rect key="frame" x="58" y="384.5" width="299" height="40"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30588235294117649" green="0.62745098039215685" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IEJ-WQ-daK" firstAttribute="top" secondItem="2xT-xA-jyq" secondAttribute="top" constant="179" id="0VR-Fr-QVu"/>
+                            <constraint firstItem="Vg3-qZ-rIT" firstAttribute="leading" secondItem="2xT-xA-jyq" secondAttribute="leading" constant="129" id="DJW-8s-3jl"/>
+                            <constraint firstItem="2xT-xA-jyq" firstAttribute="bottom" secondItem="Ab8-IN-9LG" secondAttribute="bottom" constant="38" id="JmS-ZD-uTq"/>
+                            <constraint firstItem="2xT-xA-jyq" firstAttribute="trailing" secondItem="Ab8-IN-9LG" secondAttribute="trailing" constant="119" id="RTW-EG-z6f"/>
+                            <constraint firstItem="2xT-xA-jyq" firstAttribute="trailing" secondItem="qOy-Bv-T98" secondAttribute="trailing" constant="57" id="dYK-SO-prw"/>
+                            <constraint firstItem="qOy-Bv-T98" firstAttribute="leading" secondItem="2xT-xA-jyq" secondAttribute="leading" constant="58" id="eAp-vG-g2h"/>
+                            <constraint firstItem="2xT-xA-jyq" firstAttribute="trailing" secondItem="Vg3-qZ-rIT" secondAttribute="trailing" constant="129" id="jV3-Bq-rPn"/>
+                            <constraint firstItem="Vg3-qZ-rIT" firstAttribute="top" secondItem="IEJ-WQ-daK" secondAttribute="bottom" constant="20" id="nlL-TB-e5H"/>
+                            <constraint firstItem="Ab8-IN-9LG" firstAttribute="leading" secondItem="2xT-xA-jyq" secondAttribute="leading" constant="119" id="t5I-j5-2hz"/>
+                            <constraint firstItem="qOy-Bv-T98" firstAttribute="top" secondItem="Vg3-qZ-rIT" secondAttribute="bottom" constant="27" id="uh5-Rc-GtI"/>
+                            <constraint firstItem="IEJ-WQ-daK" firstAttribute="leading" secondItem="2xT-xA-jyq" secondAttribute="leading" constant="68" id="y72-t0-rXN"/>
+                            <constraint firstItem="2xT-xA-jyq" firstAttribute="trailing" secondItem="IEJ-WQ-daK" secondAttribute="trailing" constant="67" id="zhB-rq-iCn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2xT-xA-jyq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U4B-y5-RnU"/>
+                    <connections>
+                        <outlet property="adviceLabel" destination="qOy-Bv-T98" id="cwJ-kT-Z4g"/>
+                        <outlet property="bmiLabel" destination="Vg3-qZ-rIT" id="SXG-iV-BCF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSA-Au-PNJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981.15942028985512" y="131.91964285714286"/>
         </scene>
     </scenes>
 </document>
