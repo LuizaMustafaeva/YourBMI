@@ -1,24 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="YourBMI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="Hxn-Qv-yb3">
+                                <rect key="frame" x="0.0" y="-18" width="414" height="870"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Узнайте свой индекс массы тела" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3z-1l-zu8">
+                                        <rect key="frame" x="19.5" y="0.0" width="375" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="PKv-jM-NI0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="47"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="acG-Ic-dEM">
+                                        <rect key="frame" x="10" y="446" width="394" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш рост:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldn-Br-ZeD">
+                                                <rect key="frame" x="0.0" y="0.0" width="154.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5 м" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQb-mm-ZoM">
+                                                <rect key="frame" x="239.5" y="0.0" width="154.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="SyU-nq-cTq"/>
+                                        </constraints>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.25" minValue="0.0" maxValue="2.5" translatesAutoresizingMaskIntoConstraints="NO" id="X3G-kY-f3a">
+                                        <rect key="frame" x="8" y="532" width="398" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="BkW-f7-JNq"/>
+                                            <constraint firstAttribute="width" constant="394" id="UWv-pN-IrT"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="heightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ffU-y2-AdM"/>
+                                        </connections>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="xDb-6I-x0L">
+                                        <rect key="frame" x="10" y="618" width="394" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш вес:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbv-dd-ZGn">
+                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 кг" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQi-1G-beW">
+                                                <rect key="frame" x="224.5" y="0.0" width="169.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="3V5-Aq-RJl"/>
+                                            <constraint firstAttribute="width" constant="394" id="Da8-Uc-tv7"/>
+                                            <constraint firstAttribute="height" constant="40" id="rBN-9M-GLq"/>
+                                        </constraints>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="HPO-5v-Zcx">
+                                        <rect key="frame" x="8" y="704" width="398" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6my-Ku-9Xx"/>
+                                            <constraint firstAttribute="width" constant="394" id="aBL-kU-3IY"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="weightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0yn-MI-d4b"/>
+                                        </connections>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co5-QP-uUC">
+                                        <rect key="frame" x="113" y="790" width="188" height="80"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="42"/>
+                                        <state key="normal" title="Посчитать!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UNe-v4-p8c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="co5-QP-uUC" firstAttribute="top" secondItem="Hxn-Qv-yb3" secondAttribute="top" constant="790" id="5ng-O2-s7h"/>
+                                    <constraint firstItem="f3z-1l-zu8" firstAttribute="top" secondItem="Hxn-Qv-yb3" secondAttribute="top" id="9k6-Ay-jRD"/>
+                                    <constraint firstAttribute="trailing" secondItem="acG-Ic-dEM" secondAttribute="trailing" constant="10" id="hSM-Gb-svM"/>
+                                    <constraint firstItem="acG-Ic-dEM" firstAttribute="leading" secondItem="Hxn-Qv-yb3" secondAttribute="leading" constant="10" id="nrg-l0-Jof"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30588235294117649" green="0.53725490196078429" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hxn-Qv-yb3" secondAttribute="trailing" id="2Y4-As-Cea"/>
+                            <constraint firstItem="Hxn-Qv-yb3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="CZT-6i-Y9J"/>
+                            <constraint firstItem="Hxn-Qv-yb3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L1m-ps-Tcr"/>
+                            <constraint firstItem="Hxn-Qv-yb3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NaU-mU-6rV"/>
+                            <constraint firstAttribute="bottom" secondItem="Hxn-Qv-yb3" secondAttribute="bottom" constant="44" id="lrE-fQ-O2G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="QQb-mm-ZoM" id="Yjc-1U-hBW"/>
+                        <outlet property="heightSlider" destination="X3G-kY-f3a" id="0ll-bS-xBu"/>
+                        <outlet property="weightLabel" destination="uQi-1G-beW" id="0U5-1N-jWm"/>
+                        <outlet property="weightSlider" destination="HPO-5v-Zcx" id="q4f-s2-Ve7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
         </scene>
     </scenes>
 </document>

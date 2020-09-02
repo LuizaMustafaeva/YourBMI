@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ResultViewController.swift
 //  YourBMI
 //
 //  Created by Luiza on 02.09.2020.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+    }
+    
 
 }
-

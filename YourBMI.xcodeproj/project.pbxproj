@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		2569331724FF7757003B8C89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569331624FF7757003B8C89 /* AppDelegate.swift */; };
 		2569331924FF7757003B8C89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569331824FF7757003B8C89 /* SceneDelegate.swift */; };
-		2569331B24FF7757003B8C89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569331A24FF7757003B8C89 /* ViewController.swift */; };
+		2569331B24FF7757003B8C89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569331A24FF7757003B8C89 /* MainViewController.swift */; };
 		2569331E24FF7757003B8C89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2569331C24FF7757003B8C89 /* Main.storyboard */; };
 		2569332024FF7758003B8C89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2569331F24FF7758003B8C89 /* Assets.xcassets */; };
 		2569332324FF7758003B8C89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2569332124FF7758003B8C89 /* LaunchScreen.storyboard */; };
+		2569332B24FF86F2003B8C89 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569332A24FF86F2003B8C89 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2569331324FF7757003B8C89 /* YourBMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourBMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2569331624FF7757003B8C89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2569331824FF7757003B8C89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2569331A24FF7757003B8C89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2569331A24FF7757003B8C89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2569331D24FF7757003B8C89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2569331F24FF7758003B8C89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2569332224FF7758003B8C89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2569332424FF7758003B8C89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2569332A24FF86F2003B8C89 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				2569331624FF7757003B8C89 /* AppDelegate.swift */,
 				2569331824FF7757003B8C89 /* SceneDelegate.swift */,
-				2569331A24FF7757003B8C89 /* ViewController.swift */,
+				2569331A24FF7757003B8C89 /* MainViewController.swift */,
+				2569332A24FF86F2003B8C89 /* ResultViewController.swift */,
 				2569331C24FF7757003B8C89 /* Main.storyboard */,
 				2569331F24FF7758003B8C89 /* Assets.xcassets */,
 				2569332124FF7758003B8C89 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2569331B24FF7757003B8C89 /* ViewController.swift in Sources */,
+				2569331B24FF7757003B8C89 /* MainViewController.swift in Sources */,
 				2569331724FF7757003B8C89 /* AppDelegate.swift in Sources */,
 				2569331924FF7757003B8C89 /* SceneDelegate.swift in Sources */,
+				2569332B24FF86F2003B8C89 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
